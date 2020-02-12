@@ -13,9 +13,9 @@ def full?(board)
   return full
 end
 
-# 0 1 2
-# 3 4 5
-# 6 7 8
+def draw?(board)
+  return !(won?(board)) && full?(board)
+end
 
 # Define your WIN_COMBINATIONS constant
 def won?(board)
