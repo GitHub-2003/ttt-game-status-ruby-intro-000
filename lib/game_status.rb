@@ -17,6 +17,9 @@ def draw?(board)
   return !(won?(board)) && full?(board)
 end
 
+def over?(board)
+end
+
 # Define your WIN_COMBINATIONS constant
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
