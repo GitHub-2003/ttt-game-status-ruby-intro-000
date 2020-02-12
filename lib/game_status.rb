@@ -4,12 +4,13 @@ def position_taken?(board, index)
 end
 
 def full?(board)
+  full = true
   WIN_COMBINATIONS.each do |win_combination|
     win_combination.each do |cell|
-      print(position_taken?(board, cell))
+      full = full && position_taken?(board, cell)
     end
-    puts
   end
+  return full
 end
 
 # 0 1 2
