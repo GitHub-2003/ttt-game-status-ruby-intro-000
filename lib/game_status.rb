@@ -18,7 +18,6 @@ def won?(board)
     position_3 = board[win_index_3]
     if position_1 == position_2 && position_2 == position_3
         return (win_combination) # return the win_combination indexes that won.
-      end
     else
       false
     end
