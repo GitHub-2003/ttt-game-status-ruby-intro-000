@@ -6,10 +6,9 @@ end
 def full?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_combination.each do |cell|
-      if !(possition_taken?(board, cell))
-        return false
-      end
+      print(possition_taken?(board, cell))
     end
+    puts
   end
 end
 
