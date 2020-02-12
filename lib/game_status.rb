@@ -6,7 +6,7 @@ end
 def full?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_combination.each do |cell|
-      print cell
+      print board[cell]
     end
     puts("-----")
   end
