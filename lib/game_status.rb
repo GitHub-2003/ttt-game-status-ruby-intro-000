@@ -3,8 +3,13 @@ def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
 
-def empty_board?(board)
-
+def full?(board)
+  WIN_COMBINATIONS.each do |win_combination|
+    win_combination.each do |cell|
+      print cell
+    end
+    puts
+  end
 end
 
 # 0 1 2
@@ -21,8 +26,6 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
     if (position_1 == "X" || position_1 == "O") && (position_1 == position_2) && (position_1 == position_3)
-      print(position_1, position_2, position_3)
-      puts
       return (win_combination) # return the win_combination indexes that won.
     else
       false
