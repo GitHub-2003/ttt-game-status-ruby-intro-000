@@ -22,6 +22,7 @@ def won?(board)
     position_3 = board[win_index_3]
     if (position_1 == "X" || position_1 = "O") && (position_1 == position_2) && (position_1 == position_3)
       print(position_1, position_2, position_3)
+      puts
       return (win_combination) # return the win_combination indexes that won.
     else
       false
