@@ -4,7 +4,7 @@ def position_taken?(board, index)
 end
 
 def empty_board?(board)
-  
+
 end
 
 # 0 1 2
