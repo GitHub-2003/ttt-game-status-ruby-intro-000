@@ -22,9 +22,7 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).each do |cell|
-    puts(cell[0])
-  end
+  puts(won?(board))
 end
 
 # Define your WIN_COMBINATIONS constant
