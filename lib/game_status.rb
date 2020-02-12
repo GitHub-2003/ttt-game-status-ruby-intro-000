@@ -20,7 +20,7 @@ def won?(board)
       if position_taken?(board, win_index_1)
         return (win_combination) # return the win_combination indexes that won.
       else
-        false
+        return false
       end
     else
       false
