@@ -22,9 +22,13 @@ def over?(board)
 end
 
 def winner(board)
-  won?(board).each do |cells|
-    index_1 = cells[0]
-    return board[index_1]
+  if (won?(board) == nil)
+    return(won?(board))
+  else
+    won?(board).each do |cells|
+      index_1 = cells[0]
+      return board[index_1]
+    end
   end
 end
 
@@ -51,7 +55,5 @@ WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[2,4,6],[0,3,6],[1,4,7],[2,5
 
 board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
 # board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
-if (won?(board) == nil)
-  puts("nil")
-end
+
 # puts(winner(board))
