@@ -53,4 +53,4 @@ board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
 # board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
 puts(won?(board))
 
-puts(winner(board))
+# puts(winner(board))
