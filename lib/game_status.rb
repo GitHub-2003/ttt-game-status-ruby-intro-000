@@ -53,5 +53,5 @@ board = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
 # board = ["X", "O", " ", " ", "O", " ", " ", "O", "X"]
 if (won?(board == nil)
   puts("nil")
-
+end
 # puts(winner(board))
