@@ -24,7 +24,8 @@ end
 def winner(board)
   won?(board).each do |cells|
     index_1 = cells[0]
-    return board[index_1]
+  end
+  return board[index_1]
 end
 
 # Define your WIN_COMBINATIONS constant
