@@ -22,6 +22,7 @@ def over?(board)
 end
 
 def winner(board)
+  puts(won?(board))
   won?(board).each do |cells|
     index_1 = cells[0]
     return board[index_1]
