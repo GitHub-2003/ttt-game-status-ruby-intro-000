@@ -8,7 +8,7 @@ def full?(board)
     win_combination.each do |cell|
       print cell
     end
-    puts
+    puts("-----")
   end
 end
 
@@ -40,3 +40,4 @@ WIN_COMBINATIONS = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[2,4,6],[0,3,6],[1,4,7],[2,5
 board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
 puts full?(board)
 # board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+
